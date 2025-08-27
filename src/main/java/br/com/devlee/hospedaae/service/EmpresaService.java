@@ -20,4 +20,12 @@ public class EmpresaService {
     public EmpresaModel save(EmpresaModel empresa) {return empresaRepository.save(empresa);}
 
     public void delete(UUID id) {empresaRepository.deleteById(id);}
+
+    public EmpresaModel update(UUID id, EmpresaModel updatedEmpresa) {
+        return empresaRepository.findById(id).map(empresa -> {
+            empresa.setNomeFantasia(updatedEmpresa.getNomeFantasia());
+            empresa.setCnpj(updatedEmpresa.getCnpj());
+            return empresaRepository.save(empresa);
+        }).orElseThrow(() -> new RuntimeException("Empresa não encontrada com o ID: " + id));
+    }
 }

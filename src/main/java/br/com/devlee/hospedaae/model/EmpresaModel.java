@@ -1,6 +1,8 @@
 package br.com.devlee.hospedaae.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+
 
 import java.util.UUID;
 
@@ -10,8 +12,10 @@ public class EmpresaModel {
     @Id
     private UUID id;
     @Column(nullable = false)
+    @NotBlank
     private String nomeFantasia;
     @Column(nullable = false)
+    @NotBlank
     private String cnpj;
 
     @PrePersist
