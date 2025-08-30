@@ -37,4 +37,8 @@ public class TierService {
     public void delete(UUID id) {
         repository.deleteById(id);
     }
+
+    public TierModel searchById(UUID id) {
+        return repository.findById(id).orElseThrow(() -> new RuntimeException(("Não foi possível localizar nenhum tier através do ID fornecido.")));
+    }
 }

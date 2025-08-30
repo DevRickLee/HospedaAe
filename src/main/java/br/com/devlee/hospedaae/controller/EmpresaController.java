@@ -31,4 +31,9 @@ public class EmpresaController {
         return empresaService.update(id, updatedEmpresa);
     }
 
+    @GetMapping("{id}")
+    public EmpresaModel searchById(@PathVariable UUID id){
+        return empresaService.searchById(id);
+    }
+
 }

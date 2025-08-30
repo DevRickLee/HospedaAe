@@ -28,4 +28,8 @@ public class EmpresaService {
             return empresaRepository.save(empresa);
         }).orElseThrow(() -> new RuntimeException("Empresa não encontrada com o ID: " + id));
     }
+
+    public EmpresaModel searchById(UUID id) {
+        return empresaRepository.findById(id).orElseThrow(() -> new RuntimeException("Não foi possível localizar nenhuma empresa com o ID fornecido."));
+    }
 }

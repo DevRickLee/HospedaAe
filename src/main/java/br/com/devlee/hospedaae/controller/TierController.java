@@ -37,5 +37,10 @@ public class TierController {
         tierService.delete(id);
     }
 
+    @GetMapping("/{id}")
+    public TierModel searchById(@PathVariable UUID id){
+        return tierService.searchById(id);
+    }
+
 
 }

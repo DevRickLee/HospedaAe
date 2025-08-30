@@ -36,4 +36,10 @@ public class UserController {
     public UserModel update(@PathVariable UUID id, @Valid @RequestBody UserModel updatedUser){
         return userService.update(id, updatedUser);
     }
+
+    @GetMapping("/{id}")
+    public UserResponseDTO searchById(@PathVariable UUID id){
+        UserModel userObtido = userService.searchById(id);
+        return userService.toDTO(userObtido);
+    }
 }

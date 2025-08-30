@@ -71,4 +71,7 @@ public class UserService {
         return dto;
     }
 
+    public UserModel searchById(UUID id) {
+        return userRepository.findById(id).orElseThrow(() -> new RuntimeException("Não foi possível localizar nenhum usuário com o ID fornecido."));
+    }
 }
