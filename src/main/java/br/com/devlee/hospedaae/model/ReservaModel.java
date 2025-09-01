@@ -23,5 +23,5 @@ public class ReservaModel {
     private Responsavel responsavel;
     private LocalDate checkin;
     private LocalDate checkout;
-    private LocalDateTime data_emissao;
+    private LocalDateTime momento_emissao;
 }
