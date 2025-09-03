@@ -9,7 +9,6 @@ O **HospedaAe** é um sistema de gerenciamento de **pousadas e hotéis**, criado
 * **Gestão de Quartos**: Adicione, edite ou remova quartos, com informações sobre tipo, capacidade e status (disponível, ocupado, em manutenção).
 * **Gestão de Hóspedes**: Cadastre informações de hóspedes de forma simples e segura.
 * **Sistema de Reservas**: Realize o agendamento de reservas e mantenha o controle do histórico.
-* **Check-in & Check-out**: Atualize o status dos hóspedes para refletir a ocupação atual dos quartos.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -51,6 +50,14 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 O projeto estará rodando em `http://localhost:8080`. Você pode acessar os endpoints da API para interagir com o sistema.
 
+---
+## 🤝 Colaboradores
+
+Agradecemos a valiosa contribuição de:
+
+* **[Thálita Oliveira](https://github.com/thaa0)**: Responsável pela concepção e desenvolvimento da entidade de `Reservas`, além de fornecer valiosos insights e dicas durante o processo de criação do projeto.
+
+---
 ## 🤝 Como Contribuir
 
 Contribuições, sugestões e relatórios de bugs são muito bem-vindos! Se você encontrar um bug ou tiver uma ideia de melhoria, sinta-se à vontade para abrir uma **issue** ou um **pull request**.
